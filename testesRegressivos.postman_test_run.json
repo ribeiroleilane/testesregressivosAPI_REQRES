@@ -1,0 +1,244 @@
+{
+	"id": "ab754aa6-1e28-442a-a5de-1c629a7a4ded",
+	"name": "testesRegressivos",
+	"timestamp": "2023-06-17T21:07:05.091Z",
+	"collection_id": "23176682-92768a33-2ac4-4777-9cbc-5c0659c01dde",
+	"folder_id": 0,
+	"environment_id": "23176682-280b18eb-6e2c-43d0-8c53-bc339ab10de6",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-17T21:07:00.350Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bfa86dc6-f264-4611-8c9f-29ceb5e07f5b",
+			"name": "listarUsuários",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e14a3b40-2588-4c2a-9015-69f5f2481d5e",
+			"name": "consultarUsuário",
+			"url": "https://reqres.in/api/users/2",
+			"time": 49,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Consultar nome": true,
+				"Validar tempo de resposta": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Consultar nome": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar tempo de resposta": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Consultar nome": true,
+					"Validar tempo de resposta": true
+				}
+			]
+		},
+		{
+			"id": "23a90d02-917f-4651-9eba-8cea7ccf36b7",
+			"name": "criarUsuário",
+			"url": "https://reqres.in/api/users",
+			"time": 451,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Consultar nome": true,
+				"Tempo de resposta": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Consultar nome": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tempo de resposta": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				451
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Consultar nome": true,
+					"Tempo de resposta": true
+				}
+			]
+		},
+		{
+			"id": "e7f298e4-f29b-477d-b803-b7c09dc7a0bd",
+			"name": "usuárioNãoEncontrado",
+			"url": "https://reqres.in/api/users/unknown/23",
+			"time": 44,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Usuário não cadastrado": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Usuário não cadastrado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				44
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Usuário não cadastrado": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "21203b07-fb06-42f8-bbaa-e5c69b61f4be",
+			"name": "atualizar",
+			"url": "https://reqres.in/api/users/users/2",
+			"time": 454,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				454
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5c9c7d5b-e72b-45a4-877c-f1904c8b4bb7",
+			"name": "deletar",
+			"url": "https://reqres.in/api/users/2",
+			"time": 466,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				466
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1512,
+	"collection": {
+		"requests": [
+			{
+				"id": "bfa86dc6-f264-4611-8c9f-29ceb5e07f5b",
+				"method": "GET"
+			},
+			{
+				"id": "e14a3b40-2588-4c2a-9015-69f5f2481d5e",
+				"method": "GET"
+			},
+			{
+				"id": "23a90d02-917f-4651-9eba-8cea7ccf36b7",
+				"method": "POST"
+			},
+			{
+				"id": "e7f298e4-f29b-477d-b803-b7c09dc7a0bd",
+				"method": "GET"
+			},
+			{
+				"id": "21203b07-fb06-42f8-bbaa-e5c69b61f4be",
+				"method": "PUT"
+			},
+			{
+				"id": "5c9c7d5b-e72b-45a4-877c-f1904c8b4bb7",
+				"method": "DELETE"
+			}
+		]
+	}
+}
